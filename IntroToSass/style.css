@@ -1,0 +1,177 @@
+.mainheading {
+  background-color: red;
+}
+
+body {
+  background-color: burlywood;
+  border: 6px groove gold;
+  margin: 10px;
+  padding: 10px;
+}
+
+p {
+  font-size: 2rem;
+}
+
+h1 {
+  background-color: coral;
+  color: darkblue;
+  font-size: 3rem;
+  border: 0px;
+  border-radius: 20px;
+  box-shadow: 0px 0px 15px black;
+  text-align: center;
+}
+
+body {
+  background-color: lightblue;
+  border: 6px groove plum;
+  margin: 10px;
+  padding: 10px;
+}
+
+div h2 {
+  font-size: 2.5rem;
+  color: darkred;
+}
+
+div ul li {
+  font-size: 1.7rem;
+  color: darkgreen;
+}
+
+.blue, .yellow, .green, .red {
+  width: 200px;
+  height: 150px;
+  border: 0px;
+  box-shadow: 0px 0px 15px black;
+  font-size: 4rem;
+  color: white;
+  text-align: center;
+  display: inline-block;
+  margin: 25px;
+  padding-top: 50px;
+  border-radius: 10px;
+}
+
+.red {
+  background-color: red;
+}
+
+.green {
+  background-color: green;
+}
+
+.yellow {
+  background-color: yellow;
+}
+
+.blue {
+  background-color: blue;
+}
+
+.pink {
+  width: 200px;
+  height: 150px;
+  border: 0px;
+  box-shadow: 0px 0px 15px black;
+  font-size: 5rem;
+  color: white;
+  text-align: center;
+  display: inline-block;
+  margin: 25px;
+  padding-top: 50px;
+  border-radius: 10px;
+  background-color: deeppink;
+}
+
+.orange {
+  width: 200px;
+  height: 150px;
+  border: 0px;
+  box-shadow: 0px 0px 15px black;
+  font-size: 4rem;
+  color: black;
+  text-align: center;
+  display: inline-block;
+  margin: 25px;
+  padding-top: 50px;
+  border-radius: 30px;
+  background-color: orange;
+}
+
+.purple {
+  width: 200px;
+  height: 150px;
+  border: 0px;
+  box-shadow: 0px 0px 15px black;
+  font-size: 3rem;
+  color: black;
+  text-align: center;
+  display: inline-block;
+  margin: 25px;
+  padding-top: 50px;
+  border-radius: 70px;
+  background-color: purple;
+}
+
+.grey {
+  width: 200px;
+  height: 150px;
+  border: 0px;
+  box-shadow: 0px 0px 15px black;
+  font-size: 3rem;
+  color: white;
+  text-align: center;
+  display: inline-block;
+  margin: 25px;
+  padding-top: 50px;
+  border-radius: 100px;
+  background-color: grey;
+}
+
+.gold {
+  width: 66.6666666667%;
+  border: 0px;
+  border-radius: 15px -5px;
+  margin: 25.2px;
+  font-size: 4rem;
+  padding-top: 50px;
+  border-radius: 19.5px;
+  background-color: gold;
+  text-align: center;
+  display: inline-block;
+  height: 150px;
+  box-shadow: 0px 0px 15px black;
+}
+
+.ifelse {
+  background-color: #f2ece4;
+  color: #036;
+  width: 950px;
+  height: 100px;
+  margin: 25px;
+}
+.ifelse body.dark {
+  background-color: #6b717f;
+  color: #d2e1dd;
+}
+
+ul:nth-child(3n+1) {
+  background-color: rgb(166.11328125, 241.38671875, 166.11328125);
+}
+
+ul:nth-child(3n+2) {
+  background-color: rgb(188.2265625, 244.7734375, 188.2265625);
+}
+
+ul:nth-child(3n+3) {
+  background-color: rgb(210.33984375, 248.16015625, 210.33984375);
+}
+
+h2 {
+  font-size: 1.8rem;
+  color: darkslateblue;
+}
+
+/*# sourceMappingURL=style.css.map */

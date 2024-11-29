@@ -1,0 +1,178 @@
+
+@import "./partial";
+
+$bgcolor:coral;
+$color:darkblue;
+$fontsize:3rem;
+$border:0px;
+$borderRadius:20px;
+$boxShadow:0px 0px 15px black;
+
+
+h1{
+    background-color: $bgcolor;
+    color: $color;
+    font-size: $fontsize;
+    border: $border;
+    border-radius: $borderRadius;
+    box-shadow: $boxShadow;
+    text-align: center;
+}
+
+body{
+    background-color: lightblue;
+    border: 6px groove plum;
+    margin: 10px;
+    padding: 10px;
+    
+    
+}
+
+div{
+    h2{
+        font-size: 2.5rem;
+        color:darkred;
+    }
+}
+div{
+    ul{
+        li{
+            font-size: 1.7rem;
+            color: darkgreen;
+        }
+    }
+}
+
+
+%message{
+    width: 200px;
+    height:150px;
+    border: 0px;
+    box-shadow: 0px 0px 15px black;
+    font-size: 4rem;
+    color: white;
+    text-align: center;
+    display: inline-block;
+    margin: 25px;
+    padding-top: 50px;
+    border-radius: 10px;
+    
+}
+.red{
+    @extend %message;
+    background-color: red;
+   
+}
+.green{
+    @extend %message;  
+    background-color: green;
+}
+.yellow{
+    @extend %message; 
+    background-color: yellow;
+}
+.blue{
+    @extend %message; 
+    background-color: blue;
+}
+
+@mixin divStyles($bgcolor,$color,$fontsize,$textal,$paddingTop,$width,$height, $border,$boxShadow,$display,$borRadius,$margin){
+    width: $width;
+    height:$height;
+    border: $border;
+    box-shadow: $boxShadow;
+    font-size: $fontsize;
+    color: $color;
+    text-align: $textal;
+    display: $display;
+    margin: $margin;
+    padding-top: $paddingTop;
+    border-radius: $borRadius;
+    background-color: $bgcolor;
+}
+
+.pink{
+    @include divStyles(deeppink,white ,5rem ,center ,50px ,200px ,150px ,0px , 0px 0px 15px black,inline-block ,10px ,25px )
+}
+.orange{
+    @include divStyles(orange,black ,4rem ,center ,50px ,200px ,150px ,0px , 0px 0px 15px black,inline-block ,30px ,25px )
+}
+.purple{
+    @include divStyles(purple,black ,3rem ,center ,50px ,200px ,150px ,0px , 0px 0px 15px black,inline-block ,70px ,25px )
+}
+.grey{
+    @include divStyles(grey,white ,3rem ,center ,50px ,200px ,150px ,0px , 0px 0px 15px black,inline-block ,100px ,25px )
+}
+
+
+    
+$padding-top: 10px;
+$margin: 20px;
+$width: 100%;
+$fontsize:2rem;
+$borderRadius:15px;
+
+.gold {
+
+    width: $width/1.5;
+    border: 0px;
+    border-radius: $borderRadius -5px;
+    margin: $margin +5.2px;
+    font-size: $fontsize +2rem;
+    padding-top: $padding-top + 40px;
+    border-radius: 10px+9.5px;
+    background-color: gold;
+    text-align: center;
+    display: inline-block;
+    height:150px;
+    box-shadow: 0px 0px 15px black;
+   
+}
+
+$light-background: #f2ece4;
+$light-text: #036;
+$dark-background: #6b717f;
+$dark-text: #d2e1dd;
+
+@mixin theme-colors($light-theme: true) {
+  @if $light-theme {
+    background-color: $light-background;
+    color: $light-text;
+    width:950px;
+    height: 100px;
+    margin: 25px;
+    
+  } @else {
+    background-color: $dark-background;
+    color: $dark-text;
+  }
+}
+
+
+.ifelse {
+    @include theme-colors($light-theme: true);
+    body.dark  {
+      @include theme-colors($light-theme: false);
+    }
+  }
+
+
+  
+
+  $base-color: lightgreen;
+
+  @for $i from 1 through 3 {
+    ul:nth-child(3n + #{$i}) {
+      background-color: lighten($base-color, $i * 5%);
+    }
+  }
+  
+
+  
+h2{
+    font-size: 1.8rem;
+    color: darkslateblue;
+}
+
+
+
